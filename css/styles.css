@@ -8,6 +8,15 @@ body {
 
 th, td {
     padding: 10px;
+    font-size: 18px;
+}
+
+#Table {
+    font-size: 0.7em; border: 1px solid
+}
+
+#YPYOM, #YEO, #YOFFH {
+    text-align: center;
 }
 
 label {
@@ -16,4 +25,5 @@ label {
 
 button {
     margin: 5px;
+    font-size: 17px;
 }

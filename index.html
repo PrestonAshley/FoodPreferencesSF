@@ -6,7 +6,7 @@
     <title>Food Preferences Survey Form</title>
 
     <link rel="stylesheet" href="./css/styles.css">
-    
+
 </head>
 <body>
     <h1>Food Preferences - Survey Form</h1>
@@ -16,11 +16,11 @@
         <table>
             <tr>
                 <td>1. Name</td>
-                <td><input type="text" name="user"></td>
+                <td><input type="text" id="Name" name="user" aria-label="Enter Name"></td>
             </tr>
             <tr>
                 <td>2. Age</td>
-                <td><input type="number" name="age" min="13" max="100"></td>
+                <td><input type="number" name="age" min="13" max="100" aria-label="Enter Age"></td>
             </tr>
             <tr>
                 <td>3. Where do you eat most often?</td>
@@ -40,7 +40,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <table style="font-size: 0.7em; border: 1px solid">
+                    <table id="Table">
                         <thead>
                             <th></th>
                             <th>Every Day</th>
@@ -51,32 +51,32 @@
                             <th>Less Often Than A Month</th>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr id="YPYOM">
                                 <td>You Prepare Your Own Meal</td>
-                                <td style="text-align: center;"><input type="radio" name="you_prepare" value="Every day"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_prepare" value="Few Times A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_prepare" value="Once A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_prepare" value="Several Times A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_prepare" value="Once A Month"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_prepare" value="Less Often Than Once A Month"></td>
+                                <td><input type="radio" name="you_prepare" value="Every day" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_prepare" value="Few Times A Week" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_prepare" value="Once A Week" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_prepare" value="Several Times A Week" aria-label="Select One"></td>
+                                <td ><input type="radio" name="you_prepare" value="Once A Month" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_prepare" value="Less Often Than Once A Month" aria-label="Select One"></td>
                             </tr>
-                            <tr>
+                            <tr id="YEO">
                                 <td>You Eat Out</td>
-                                <td style="text-align: center;"><input type="radio" name="you_eat_out" value="Every day"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_eat_out" value="Few Times A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_eat_out" value="Once A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_eat_out" value="Several Times A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_eat_out" value="Once A Month"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_eat_out" value="Less Often Than Once A Month"></td>
+                                <td><input type="radio" name="you_eat_out" value="Every day" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_eat_out" value="Few Times A Week" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_eat_out" value="Once A Week" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_eat_out" value="Several Times A Week" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_eat_out" value="Once A Month" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_eat_out" value="Less Often Than Once A Month" aria-label="Select One"></td>
                             </tr>
-                            <tr>
+                            <tr id="YOFFH">
                                 <td>You Order Food For Home</td>
-                                <td style="text-align: center;"><input type="radio" name="you_order_food" value="Every day"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_order_food" value="Few Times A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_order_food" value="Once A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_order_food" value="Several Times A Week"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_order_food" value="Once A Month"></td>
-                                <td style="text-align: center;"><input type="radio" name="you_order_food" value="Less Often Than Once A Month"></td>
+                                <td><input type="radio" name="you_order_food" value="Every day" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_order_food" value="Few Times A Week" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_order_food" value="Once A Week" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_order_food" value="Several Times A Week" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_order_food" value="Once A Month" aria-label="Select One"></td>
+                                <td><input type="radio" name="you_order_food" value="Less Often Than Once A Month" aria-label="Select One"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -136,7 +136,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><button>Submit</button><button type="reset">Reset</button></td>
+                            <td><button type="submit">Submit</button><button type="reset">Reset</button></td>
                         </tr>
                     </table>
                 </td>

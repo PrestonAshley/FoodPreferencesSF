@@ -1,0 +1,19 @@
+html {
+    margin: 0px 600px 
+}
+
+body {
+    font-family: sans-serif;
+}
+
+th, td {
+    padding: 10px;
+}
+
+label {
+    margin-right: 20px;
+}
+
+button {
+    margin: 5px;
+}
